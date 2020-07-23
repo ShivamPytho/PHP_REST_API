@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>PHP - RESt API</title>
+  </head>
+  <body>
+    <div class="container ">
+        <h3 class="text-center">PHP REST API CRUD</h3>
+        <div class="container my-4 ">
+            <h3>Student Insert Deatiles</h3>
+          <form action="index.php" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name </label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Address</label>
+                  <textarea class="form-control" id="address" name="address"  rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">City</label>
+                    <input class="form-control" id="city" name="city"  rows="3"></input>
+                  </div>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+
+    </div>
+    
+   <div class="conatiner">
+  
+    <table class="table" id="myTable">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Action</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope='row'>1</th>
+      <td>Program Django</td>
+      <td>Django is a Framework Pythons ,
+  Python is an interpreted, high-level, </td>
+      <td> <button class='edit  btn btn-primary'  data-toggle='modal' data-target='#editmodal'>Edit</button>  <button type='submit'  href='/delete' class='btn btn-danger'>Delete</button></td>
+      <td>2020-05-24 10:19:17</td>
+      
+      
+    </tr>   
+    </tbody>
+  </table>
+     </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
